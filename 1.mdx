@@ -265,17 +265,3 @@ A Sui package consists of:
 For this reason, the `Move.lock` file should always be part of the package (don't add it to the `.gitignore` file). Use the [automated address management](https://docs.sui.io/concepts/sui-move-concepts/packages/automated-address-management) instead of the old `published-at` field in the manifest file.
 
 Optionally, you can add a `tests` directory to contain the tests for the package and an `examples` directory to provide use cases for the package. Neither directory is uploaded on chain when you publish the package.
-
-```
-sources/
-    my_module.move
-    another_module.move
-    ...
-tests/
-    my_module_tests.move
-    ...
-examples/
-    using_my_module.move
-Move.lock
-Move.toml
-```
